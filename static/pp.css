@@ -1,0 +1,56 @@
+/*CSS RESET*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    font-size:62.5%;
+}
+/*Body*/
+body::before{
+    content:"";
+    position:absolute;
+    background:url('img/bg.jpg') no-repeat center center/cover;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/*Container Section*/
+.container h2{
+    font-size:2.3rem;
+    color:crimson;
+}
+.container h3{
+    font-size:1.5rem;
+    color:yellow;
+}
+.container{
+    margin-top:6.5rem;
+    margin-left:1.5rem;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    font-size:1.5rem;
+}
+.container a{
+    color: rgb(0, 217, 255);
+}
+
+/*media query*/
+@media only screen and (max-width: 380px){
+    .container{
+        margin-top:0;
+        font-size:1.35rem;
+    }
+}
+@media only screen and (max-width: 285px) {
+    .container{
+        margin-top:0;
+        font-size:1.2rem;
+    }
+}

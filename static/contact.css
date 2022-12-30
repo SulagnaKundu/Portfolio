@@ -1,0 +1,104 @@
+/*CSS RESET*/
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+html{
+    font-size:62.5%;
+}
+/*Body Section*/
+body::before{
+    content:"";
+    position:absolute;
+    background:url('img/bg.jpg') no-repeat center center/cover;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+body h2 {
+    margin-top:6rem;
+    margin-left:1.5rem;
+    color:crimson;
+    font-size:2.3rem;
+}
+
+/*Container Section*/
+.container{
+    /*margin-top:0.3rem;*/
+    margin-left:1.5rem;
+    font-size:1.7rem;
+    color:white;
+}
+.container a{
+    color:aqua;
+    font-size:1.6rem;
+}
+.container img{
+    width:2.5rem;
+    height:1.5rem;
+    margin-top:1rem;
+}
+
+/*Container1 Section*/
+.container1{
+    margin-left:1.5rem;
+    margin-top:2rem;
+    color:yellow;
+    font-size:1.5rem;
+}
+.container1 form{
+    display:flex;
+    flex-direction:column;
+}
+.container1 label{
+    padding:0.5rem;
+    font-size:1.6rem;
+    /*font-weight:bold;*/
+    color:white;
+}
+.container1 label:hover{
+    color:yellow;
+}
+.container1 input{
+    width:30vw;
+    border:none;
+    border-radius:0.5rem;
+    background-color: rgb(238, 213, 181);
+}
+.container1 textarea{
+    border:none;
+    border-radius:0.5rem;
+    background-color: rgb(238, 213, 181);
+}
+.container1 button{
+    width:7rem;
+    height:3.5rem;
+    color:white;
+    background-color:crimson;
+    border:none;
+    border-radius:0.5rem;
+    margin-left:0.5rem;
+    font-size:1.5rem;
+}
+.container1 button:hover{
+    background-color:green;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 285px) {
+    .container1 form #messagesection{
+       width:20rem;
+    }
+    .container a{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 380px) {
+    body h2 {
+        margin-top:1rem;
+    }
+}

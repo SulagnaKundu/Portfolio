@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulagna Kundu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28b7aa8911.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon-16x16.png">
+    <link rel="manifest" href="../static/img/site.webmanifest">
+    <link rel="stylesheet" href="../static/home.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <ul class="menu">
+                <li><a href="/home.pug"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="/about.pug"><i class="fa-solid fa-user"></i> About Me</a></li>
+                <li><a href="/skills.pug"><i class="fa-solid fa-graduation-cap"></i> Skills</a></li>
+                <li><a href="/pp.pug"><i class="fa-solid fa-laptop-code"></i> Personal Projects</a></li>
+                <li><a href="/contact.pug"><i class="fa-solid fa-address-book"></i> Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="navbar1">
+        <div class="dropdown">
+            <button class="dropbtn">Home
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/home.pug">Home</a>
+                <a href="/about.pug">About Me</a>
+                <a href="/skills.pug">Skills</a>
+                <a href="/pp.pug">Personal Projects</a>
+                <a href="/contact.pug">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hi , I am Sulagna Kundu.
+                    <h2>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "I am a Tech Enthusiast.", "I am Creative.", "I Love to Code." ]'>
+                        <span class="wrap"></span>
+                        </a>
+                    </h2>
+                </div>
+                <!--<div class="text-3">I Love <span>to Code.</span> I am keenly interested in <span> web-development and software development roles.</span></div>-->
+                <button id="btn" class="button"><a href="/static/img/Resume.pdf" target="_blank">Download CV</a></button>
+            </div>
+        </div>
+    </section>
+    <footer id="foot" class="footer">&copy;SulagnaKundu.All rights reserved 2022.</footer>
+    <script src="../static/home.js"></script>
+</body>
+</html>
